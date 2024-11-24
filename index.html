@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>متجر رحيق</title>
+    <style>
+        body {
+            background-color: #FFF8E1;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            color: #4B2A1F;
+        }
+
+        .hero-image {
+            background-image: url("الصورة\ الرئيسية.jpg");
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: #FFF8DC;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+            position: relative;
+        }
+
+        .logo {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            width: 100px;
+            height: auto;
+            border-radius: 50%;
+            border: 2px solid #FFC107;
+        }
+
+        .hero-text {
+            margin-top: 100px;
+        }
+
+        .hero-text h2 {
+            font-size: 47px;
+            margin-top: 0px;
+            color: #4B2A1F;
+        }
+
+        .hero-text p {
+            font-size: 24px;
+            color: #4B2A1F;
+        }
+
+        .navigation {
+            margin-top: 50px;
+        }
+
+        .navigation a {
+            color: #4B2A1F;
+            text-decoration: none;
+            margin: 0 20px;
+            font-size: 18px;
+        }
+
+        .navigation a:hover {
+            text-decoration: underline;
+        }
+
+        .products {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px;
+        }
+
+        .product {
+            background-color: #FFECB3;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            margin: 15px;
+            padding: 20px;
+            width: 80%;
+            max-width: 350px;
+            text-align: center;
+        }
+
+        .product img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .product h3 {
+            color: #4B2A1F;
+            font-size: 24px;
+        }
+
+        .product p {
+            color: #6D4C41;
+            font-size: 16px;
+        }
+
+        .buy-button {
+            background-color: #F9A825;
+            color: #FFFFFF;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        .buy-button:hover {
+            background-color: #4B2A1F;
+        }
+
+        footer {
+            background-color: #4B2A1F;
+            color: yellow;
+            padding: 15px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body dir="rtl">
+
+    <div class="hero-image">
+        <!-- شعار في الجزء العلوي الأيسر فوق الصورة -->
+        <img src="الشعار.jpg" 
+             alt="شعار المتجر" class="logo">
+
+        <div class="hero-text">
+            <h2>أجود أنواع العسل الطبيعي</h2>
+            <p>منتجات نقية من مصادر موثوقة</p>
+        </div>
+        <div class="navigation">
+            <a href="index.html">الرئيسية</a> |
+            <a href="about.html">من نحن</a> |
+            <a href="login.html">تسجيل الدخول</a> |
+            <a href="signup.html">إنشاء حساب</a> |
+            <a href="privacy.html">سياسة الخصوصية</a>
+        </div>
+    </div>
+
+    <div class="products">
+        <div class="product">
+            <img src="عسل السدر.jpg" alt="عسل السدر">
+            <h3>عسل السدر</h3>
+            <p>عسل طبيعي عالي الجودة مستخرج من أشجار السدر.</p>
+            <button class="buy-button">شراء الآن</button>
+        </div>
+
+        <div class="product">
+            <img src="عسل البرسيم.jpg" alt="عسل البرسيم">
+            <h3>عسل البرسيم</h3>
+            <p>يتميز بنكهة لذيذة وفوائد صحية عديدة.</p>
+            <button class="buy-button">شراء الآن</button>
+        </div>
+
+        <div class="product">
+            <img src="عسل الزهور.jpg" alt="عسل الزهور">
+            <h3>عسل الزهور</h3>
+            <p>عسل طبيعي مستخرج من أزهار متنوعة.</p>
+            <button class="buy-button">شراء الآن</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>رحيق. جميع الحقوق محفوظة 2024&copy;</p>
+    </footer>
+    <script>
+        window.onload=function(){
+            alert("مرحبا بك في متجر رحيق! تصفح افضل انواع العسل لدينا");};
+
+            function buyNow(productName){
+                console.log("تم النقر على زر الشراء" + productName);
+                alert("شكرا لأهتمامك! لقد اخترت" + productName + "سيتم توجيهك قريبا لإتمام عملية الشراء.");
+            }
+        
+    </script>
+
+</body>
+</html>
